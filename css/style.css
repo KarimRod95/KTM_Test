@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.test {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #24252a; */
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topMenu {
+    position: fixed;
+    top: 0;
+}
+
+
+.topMenu li a {
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
+
+.topMenu li a:hover {
+    color: #fb8500;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 80px;
+    color: #edf0f1;
+    font-weight: 600;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #edf0f1;
+    color: black;
+}
+
+.content p {
+    user-select: none;
+    font-size: 24px;
+    color: #edf0f1;
+}
+
+.content a {
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+    color: #edf0f1;
+    font-size: 24px;
+    border: 2px solid #edf0f1;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.content a:hover {
+    background-color: rgba(251, 133, 0, 0.8);
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.midSec {
+    background-color: black;
+    padding: 150px 50px 100px;
+    user-select: none;
+}
+
+.midSec h3 {
+    text-transform: uppercase;
+    color: #edf0f1;
+    padding: 20px 8%;
+    text-align: center;
+}
+
+.midSec p {
+    color: #edf0f1;
+    font-size: 24px;
+    width: 400px;
+    /* No me dejaba centrar texto, asi que le hice brute force con el margin */
+    margin-left: 30em;
+}
+
+.modBckg {
+    background-color: #24252a;
+}
